@@ -35,10 +35,8 @@ class _HomepageState extends State<Homepage> {
 
 
   Future<void> topapi()async{
-
     var url = Uri.https('fabcurate.easternts.in', '/top.json');
     var response = await http.get(url);
-
     print(response);
 
     if (response.statusCode == 200) {
