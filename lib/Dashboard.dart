@@ -57,11 +57,11 @@ class _DashboardState extends State<Dashboard> {
             onTap: (index) => setState(() =>   selectedPage = index),
             backgroundColor: Colors.black12,
             items: <BottomNavigationBarItem>[
-              BottomNavigationBarItem( icon: Icon(Icons.home,color: Colors.green,), title: Text("Home",style: TextStyle(color: Colors.black),),),
-              BottomNavigationBarItem(icon: Icon(Icons.toc,color: Colors.green,), title: Text("CATEGORY",style: TextStyle(color: Colors.black))),
-              BottomNavigationBarItem(icon: Icon(Icons.category,color: Colors.green,), title: Text("CURATE",style: TextStyle(color: Colors.black))),
-              BottomNavigationBarItem(icon: Icon(Icons.bolt,color: Colors.green,), title: Text("SALE",style: TextStyle(color: Colors.black))),
-              BottomNavigationBarItem(icon: Icon(Icons.more_horiz,color: Colors.green,), title: Text("MORE",style: TextStyle(color: Colors.black))),
+              BottomNavigationBarItem( icon: Icon(Icons.home,color: Colors.green,),),
+              BottomNavigationBarItem(icon: Icon(Icons.toc,color: Colors.green,), ),
+              BottomNavigationBarItem(icon: Icon(Icons.category,color: Colors.green,), ),
+              BottomNavigationBarItem(icon: Icon(Icons.bolt,color: Colors.green,), ),
+              BottomNavigationBarItem(icon: Icon(Icons.more_horiz,color: Colors.green,),),
             ],
 
           ),
