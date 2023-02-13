@@ -473,7 +473,6 @@ class _HomepageState extends State<Homepage> {
                                               width: 150,
                                               child: Image.network(category6[index]["image"],fit: BoxFit.fill,)),
                                           Text(category6[index]["name"],style: TextStyle(fontSize: 13,fontWeight: FontWeight.bold),textAlign: TextAlign.center,overflow: TextOverflow.ellipsis,softWrap: true,maxLines: 1,),
-
                                         ],
                                       )
                                   ),
