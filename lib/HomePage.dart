@@ -35,25 +35,17 @@ class _HomepageState extends State<Homepage> {
 
 
   Future<void> topapi()async{
-
     var url = Uri.https('fabcurate.easternts.in', '/top.json');
     var response = await http.get(url);
-
     print(response);
-
     if (response.statusCode == 200) {
       var data = json.decode(response.body);
       categg = data["main_sticky_menu"];
       var bannerimg1 = data["offer_code_banner"];
-
       for(int i =0; i < categg.length; i++){
-
         var slideimage = categg[i]["slider_images"][i]["image"];
-
         sliderimg.add(slideimage);
-
       }
-
       setState(() {
         visibility = true;
         category1 = categg;
@@ -481,7 +473,6 @@ class _HomepageState extends State<Homepage> {
                                               width: 150,
                                               child: Image.network(category6[index]["image"],fit: BoxFit.fill,)),
                                           Text(category6[index]["name"],style: TextStyle(fontSize: 13,fontWeight: FontWeight.bold),textAlign: TextAlign.center,overflow: TextOverflow.ellipsis,softWrap: true,maxLines: 1,),
-
                                         ],
                                       )
                                   ),
