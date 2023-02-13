@@ -38,20 +38,14 @@ class _HomepageState extends State<Homepage> {
     var url = Uri.https('fabcurate.easternts.in', '/top.json');
     var response = await http.get(url);
     print(response);
-
     if (response.statusCode == 200) {
       var data = json.decode(response.body);
       categg = data["main_sticky_menu"];
       var bannerimg1 = data["offer_code_banner"];
-
       for(int i =0; i < categg.length; i++){
-
         var slideimage = categg[i]["slider_images"][i]["image"];
-
         sliderimg.add(slideimage);
-
       }
-
       setState(() {
         visibility = true;
         category1 = categg;
