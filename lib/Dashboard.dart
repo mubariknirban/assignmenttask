@@ -63,7 +63,6 @@ class _DashboardState extends State<Dashboard> {
               BottomNavigationBarItem(icon: Icon(Icons.bolt,color: Colors.green,), ),
               BottomNavigationBarItem(icon: Icon(Icons.more_horiz,color: Colors.green,),),
             ],
-
           ),
           body: Container(child: _pageOptions[selectedPage]),
       ),
