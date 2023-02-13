@@ -31,7 +31,7 @@ class _DashboardState extends State<Dashboard> {
               children: [
                 Row(
                   children: [
-                    Text("F A B ",style: TextStyle(color: Colors.green),),
+                    Text("F A B C ",style: TextStyle(color: Colors.green),),
                     Text("C U R A T E",style: TextStyle(color: Colors.black),),
                   ],
                 ),
